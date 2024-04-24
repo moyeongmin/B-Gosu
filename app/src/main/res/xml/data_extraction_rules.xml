@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample data extraction rules file; uncomment and customize as necessary.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   for details.
+-->
+<data_extraction_rules>
+    <!-- 데이터 추출 시 사용될 규칙 -->
+    <extraction_rule>
+        <source>database</source>
+        <table>users</table>
+        <columns>
+            <column>name</column>
+            <column>email</column>
+        </columns>
+    </extraction_rule>
+    <extraction_rule>
+        <source>api</source>
+        <endpoint>https://api.example.com/users</endpoint>
+        <parameters>
+            <parameter key="since_date">2024-01-01</parameter>
+        </parameters>
+    </extraction_rule>
+</data_extraction_rules>
+

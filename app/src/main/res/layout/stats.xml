@@ -1,0 +1,275 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="650dp"
+    android:background="@drawable/stats">
+
+    <TextView
+        android:id="@+id/dialog_stats_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="물떡이"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/dialog_stats_ques_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="함께한 시간"
+        android:textSize="26dp"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#4D555C"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+    <TextView
+        android:id="@+id/dialog_stats_ques_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="챌린지\n클리어 횟수"
+        android:textColor="#4D555C"
+        android:textSize="26dp"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_stats_ques_1"
+        app:layout_constraintVertical_bias="0.1"></TextView>
+
+
+    <TextView
+        android:id="@+id/dialog_stats_ques_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="미션 \n클리어 지역"
+        android:textSize="26dp"
+        android:textColor="#4D555C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_stats_ques_2"
+        app:layout_constraintVertical_bias="0.1"></TextView>
+
+    <TextView
+        android:id="@+id/dialog_stats_ques_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="게임 1 총 점수"
+        android:textSize="26dp"
+        android:textColor="#4D555C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_stats_ques_3"
+        app:layout_constraintVertical_bias="0.1"></TextView>
+
+    <TextView
+        android:id="@+id/dialog_stats_ques_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="게임 2 총 점수"
+        android:textSize="26dp"
+        android:textColor="#4D555C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_stats_ques_4"
+        app:layout_constraintVertical_bias="0.1"></TextView>
+
+    <TextView
+        android:id="@+id/dialog_stats_ques_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="총 얻은 호떡"
+        android:textSize="26dp"
+        android:textColor="#4D555C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_stats_ques_5"
+        app:layout_constraintVertical_bias="0.1"></TextView>
+
+    <TextView
+        android:id="@+id/dialog_stats_ans_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3일 22시간 45분"
+        android:textSize="18sp"
+        android:textColor="#4D555C"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_1" />
+
+    <TextView
+        android:id="@+id/dialog_stats_ans_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2358회"
+        android:textColor="#4D555C"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_2" />
+
+    <TextView
+        android:id="@+id/dialog_stats_ans_3"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="해운대구, 금정구, 북구"
+        android:gravity="center"
+        android:textColor="#4D555C"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_3" />
+
+    <TextView
+        android:id="@+id/dialog_stats_ans_4"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="761580 점"
+        android:textColor="#4D555C"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_4" />
+
+    <TextView
+        android:id="@+id/dialog_stats_ans_5"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="761580 점"
+        android:textColor="#4D555C"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_5" />
+
+    <TextView
+        android:id="@+id/dialog_stats_ans_6"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#4D555C"
+        android:text="761580 점"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#4D555C"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/dialog_stats_ques_2"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#4D555C"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/dialog_stats_ques_1"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_1" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#4D555C"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/dialog_stats_ques_1"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#4D555C"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/dialog_stats_ques_1"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#4D555C"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/dialog_stats_ques_1"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_5" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textColor="#4D555C"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_stats_ques_6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/dialog_stats_ques_1"
+        app:layout_constraintTop_toTopOf="@+id/dialog_stats_ques_6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="71dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="172dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

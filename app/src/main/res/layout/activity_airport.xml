@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/fullframe"
+    tools:context="com.pnu.b_gosu.Airport.Airport">
+
+
+    <ImageView
+        android:id="@+id/airportimg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/passportcontrol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/triangle"
+        android:layout_width="29dp"
+        android:layout_height="36dp"
+        android:background="@drawable/triangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/airportimg"></TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/npc_box"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/messagebox_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triangle">
+
+        <TextView
+            android:id="@+id/npc_txt"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="center"
+            android:text="@string/npc_txt_1"
+            android:textSize="45sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/npc_nextbtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+
+            android:background="@drawable/npc_nextbtn"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/npc_txt" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_user"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+
+        android:background="@drawable/messagebox_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/npc_box"
+        app:layout_constraintVertical_bias="0.1">
+
+
+
+        <EditText
+            android:id="@+id/editext_user"
+            android:layout_width="370dp"
+            android:layout_height="120dp"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:hint="여기에 작성"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@null"></EditText>
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarview"
+            android:layout_width="370dp"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            app:mcv_selectionMode="range"
+            tools:ignore="MissingConstraints"></com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/cal_submit"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:background="@drawable/messagebox_user"
+        android:text="제출"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_user"></TextView>
+
+    <TextView
+        android:id="@+id/airport_wall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="invisible"
+        ></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

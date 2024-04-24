@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">B-Gosu</string>
+    <string name="game_view_content_description">Game View</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="npc_txt_1">Your Name?</string>
+</resources>

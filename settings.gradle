@@ -1,0 +1,33 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+
+
+//include ':app',':unityLibrary'
+//project(':unityLibrary').projectDir= new File('D:\\workspace\\BGosu\\unityLibrary')
+//
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/'}
+        maven{
+            url 'https://jitpack.io'
+        }
+//        flatDir {
+//            dirs ("${project(':unityLibrary').projectDir}/libs")
+//        }
+
+       }
+
+}
+rootProject.name = "B-Gosu"
+
+

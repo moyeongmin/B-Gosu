@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/survey_background">
+
+    <TextView
+        android:id="@+id/survey_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="여행 유형 설문조사"
+        android:gravity="center"
+        android:background="@drawable/survey_title_background"
+        android:textSize="25sp"
+        android:textColor="#80000000"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/survey_mainframe"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survey_title"
+        app:layout_constraintVertical_bias="0.2">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/survey_ques_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. 음식과 관련된 여행이라면 어떤 종류의 음식을 선호하시나요?"
+                    android:textColor="#80000000"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_1">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="한식"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans1"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans1"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans1"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_1">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="중식"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans2"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans2"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans2"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout6"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_1">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="일식"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans3"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans3"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans3"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout7"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_1">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="양식"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans4"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans4"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans4"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout8"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_1">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="뷔페식"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans5"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans5"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans5"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout9"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_1">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아시아식"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans6"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans6"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans6"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/survey_ques_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="2. 여행지에서 매운 음식을 섭취할 의향이 있으신가요?"
+                    android:textColor="#80000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout8"></TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_2">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans7"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="네"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans7"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans7"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans7"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/survey_ques_2"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout11"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_2">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans8"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans8"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans8"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans8"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/survey_ques_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="3. 선호하는 식재료는 무엇인가요?"
+                    android:textSize="20sp"
+                    android:textColor="#80000000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout11"></TextView>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/constraintLayout14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_3">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans9"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="육류"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans9"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans9"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans9"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_3">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans10"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="해산물"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans10"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans10"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans10"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout14"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_3">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans11"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="해당 없음"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans11"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans11"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans11"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/survey_ques_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="4. 아래의 선택지 중, 어떤 종류의 음식 체험을 선호하시나요?"
+                    android:textColor="#80000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout14"></TextView>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_4">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans12"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="카페"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans12"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans12"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans12"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout16"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_4">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans13"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아이스크림"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans13"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans13"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans13"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout17"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_4">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans14"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="빵집"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans14"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans14"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans14"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout18"
+                    app:layout_constraintTop_toTopOf="@+id/constraintLayout18">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans15"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="떡집"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans15"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans15"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans15"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/survey_ques_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="5. 주로 구매하고자 하는 상품의 종류는 무엇인가요?"
+                    android:textColor="#80000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout19"></TextView>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_5">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans16"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="명품"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans16"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans16"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans16"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/constraintLayout32"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout16"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_5">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans17"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="기념품"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans17"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans17"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans17"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_5">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans18"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="잡화"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans18"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans18"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans18"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout32"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_5">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans19"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="의류"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans19"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans19"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans19"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout33"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_5">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans20"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="화장품"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans20"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans20"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans20"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <TextView
+                    android:id="@+id/survey_ques_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. 어떤 타입의 문화/관광지를 방문하는 것을 선호하시나요?(중복선택 가능)"
+                    android:textColor="#80000000"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout30"></TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_6">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans21"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="자연 공원이나 경치 좋은 장소"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans21"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans21"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans21"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout25">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans22"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="역사적인 장소"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans22"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans22"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans22"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout26">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans23"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="직접 참여할 수 있는 체험형 장소"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans23"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans23"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans23"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/survey_ques_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7. 여행 중 어떤 유형의 문화지와 관광지를 선호하시나요?"
+                    android:textColor="#80000000"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout28"></TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_7">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans25"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="정적인 장소"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans25"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans25"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans25"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/constraintLayout41"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_7">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans24"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="동적인 장소"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans24"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans24"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans24"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout41"
+                    app:layout_constraintTop_toBottomOf="@+id/survey_ques_7">
+
+                    <CheckBox
+                        android:id="@+id/checkBox_ans26"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/custom_checkbox"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="해당 없음"
+                        android:textColor="#80000000"
+                        app:layout_constraintBottom_toBottomOf="@+id/checkBox_ans26"
+                        app:layout_constraintStart_toEndOf="@+id/checkBox_ans26"
+                        app:layout_constraintTop_toTopOf="@+id/checkBox_ans26"></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/dialog_submit_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/survey_submitbtn"
+        android:elevation="5dp"
+        android:text="제출"
+        android:textSize="20sp"
+        android:gravity="center"
+
+        app:layout_constraintVertical_bias="0.2"
+        android:textColor="#80000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survey_mainframe"></TextView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

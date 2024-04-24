@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">B-Gosu</string>
+
+
+    <string name="game_view_content_description">Game View</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="npc_txt_1">당신의 이름은?</string>
+    <string name="npc_txt_2">체류 기간은?</string>
+    <string name="npc_txt_3_1">부산에 방문하신 분들을 대상으로 설문조사를 진행하고 있어요!</string>
+
+    <string name="npc_txt_4_1">오. 마침 오늘 100번째 입국자시네요.</string>
+    <string name="npc_txt_4_2">저희가 100번째 입국자분들에게 부산 여행에 도움이 될 수 있는 게임기를 경품으로 드리고 있습니다!</string>
+    <string name="npc_txt_4_3">좋은 여행 되세요!</string>
+    <string name="dialog_quest_title">퀘스트</string>
+    <string name="dialog_quest_suggest_noquest">할 수 있는 퀘스트가 없어용..</string>
+    <string name="dialog_quest_noquest_close">닫기</string>
+    <string name="dialog_quest_receive_title">오늘은\n뭘 하실래요?</string>
+    <string name="dialog_quest_photo">당신의 캐릭터와 사진을 \n찍어보세요!</string>
+    <string name="dialog_quest_noquest">현재 수락된 퀘스트가 없습니다!</string>
+    <string name="dialog_quest_receivebtn">퀘스트 받기</string>
+</resources>
